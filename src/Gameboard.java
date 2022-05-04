@@ -9,6 +9,7 @@ public class Gameboard extends JPanel {
     private Sudoku g;
     public static final int BOARD_WIDTH = 540;
     public static final int BOARD_HEIGHT = 540;
+    public static final int NUM_GENERATE = 32;
     private Font f;
 
     public Gameboard() {
@@ -66,7 +67,7 @@ public class Gameboard extends JPanel {
      * Generates a new gameboard.
      */
     public void generateBoard() {
-        this.g.generateNewBoard(32);
+        this.g.generateNewBoard(NUM_GENERATE);
         repaint();
         requestFocusInWindow();
     }

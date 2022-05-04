@@ -5,9 +5,8 @@ import javax.swing.*;
  */
 
 public class Game {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Runnable game = new RunSudoku();
-        // Set the game you want to run here
         SwingUtilities.invokeLater(game);
     }
 }
